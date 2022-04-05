@@ -1,0 +1,60 @@
+:root
+{
+    --color-background: #F7E5B9;
+    --color-blue-light: #888EF8;
+    --color-blue-dark: #0C1D42;
+    --color-yellow: #FFC02B;
+    --color-red: #F04C66;
+    --color-green: #8CC067;
+}
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+
+    background-color: var(--color-background);
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--color-blue-dark);
+}
+
+p
+{
+    color: var(--color-blue-dark);
+}
+
+li
+{
+    list-style: none;
+}
+
+.container
+{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.heading-primary
+{
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 3rem;
+}

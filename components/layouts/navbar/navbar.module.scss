@@ -1,0 +1,54 @@
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    line-height: 8rem;
+
+    &Logo
+    {
+        margin-right: 4rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    &ItemLinks
+    {
+        display: flex;
+        align-items: center;
+
+        &List
+        {
+            padding-right: 4rem;
+        }
+
+        &Link
+        {
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            &:hover,
+            &:active
+            {
+                border-bottom: 1px solid var(--color-red);
+            }
+        }
+    }
+
+    &ItemSocial
+    {
+        display: flex;
+        align-items: center;
+
+        &List
+        {
+            padding: 1rem;
+        }
+
+        &Link
+        {
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+    }
+}

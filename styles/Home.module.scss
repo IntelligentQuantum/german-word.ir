@@ -1,0 +1,143 @@
+.homeHeader
+{
+    padding-top: 2rem;
+    height: 43rem;
+
+    display: flex;
+
+    &Left
+    {
+        flex: 1;
+
+        background-color: var(--color-blue-light);
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &Image
+        {
+            margin-top: 2.2rem;
+        }
+
+        &Form
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            &SearchInput
+            {
+                font-family: inherit;
+                font-size: 1.4rem;
+                color: inherit;
+                border: none;
+                padding: 1.3rem 2rem;
+                border-radius: 100px;
+                transition: all .2s;
+                margin-right: -3.25rem;
+                width: 70%;
+            }
+
+            &SearchButton
+            {
+                background: none;
+                border: none;
+
+                &:focus
+                {
+                    outline: none;
+                }
+
+                &:active
+                {
+                    transform: translateY(2px);
+                }
+
+                &Icon
+                {
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+
+    &Right
+    {
+        flex: 0 0 55%;
+
+        background-color: var(--color-yellow);
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &Image
+        {
+            margin-top: 2.2rem;
+        }
+
+        &P1
+        {
+            &SpanTop,
+            &SpanBottom
+            {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            &SpanTop
+            {
+                color: var(--color-blue-dark);
+                margin-right: 0.5rem;
+            }
+
+            &SpanBottom
+            {
+                color: var(--color-red);
+            }
+        }
+
+        &P2
+        {
+            padding-top: 1rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+}
+
+.sectionHomeLevel
+{
+    padding-top: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    height: 45rem;
+
+    &BoxA
+    {
+        background-color: var(--color-red);
+        border-radius: 2rem;
+    }
+
+    &BoxB
+    {
+        background-color: var(--color-yellow);
+        border-radius: 2rem;
+    }
+
+    &BoxC
+    {
+        background-color: var(--color-blue-light);
+        border-radius: 2rem;
+    }
+}
