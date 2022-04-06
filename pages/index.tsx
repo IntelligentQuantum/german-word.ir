@@ -8,7 +8,6 @@ import { BsSearch } from "react-icons/bs";
 
 import styles from '../styles/Home.module.scss';
 
-import Navbar from '../components/layouts/navbar/navbar.component';
 import Main from "../components/layouts/main/main.component";
 
 const Home: NextPage = () =>
@@ -19,8 +18,6 @@ const Home: NextPage = () =>
                 <title>German Word</title>
                 <meta name="description" content="Home Page German Word"/>
             </Head>
-
-            <Navbar />
 
             <header className={classnames("container", styles.homeHeader)}>
                 <div className={styles.homeHeaderLeft}>
@@ -98,6 +95,8 @@ const Home: NextPage = () =>
                     </div>
                 </section>
             </Main>
+
+
         </>
     )
 }
