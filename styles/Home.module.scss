@@ -121,23 +121,49 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem;
-    height: 45rem;
+    height: 50rem;
 
-    &BoxA
+    &BoxA,
+    &BoxB,
+    &BoxC
     {
-        background-color: var(--color-red);
+        background-color: var(--color-yellow);
         border-radius: 2rem;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        padding-top: 5rem;
+
+        & p
+        {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            line-height: 1.6;
+            font-weight: 600;
+            width: 85%;
+            text-align: center;
+        }
+
+        & a
+        {
+            margin-top: 4rem;
+            background-color: var(--color-green);
+            border-radius: 2rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 1rem 4rem;
+        }
     }
 
     &BoxB
     {
-        background-color: var(--color-yellow);
-        border-radius: 2rem;
+        background-color: var(--color-red);
     }
 
     &BoxC
     {
         background-color: var(--color-blue-light);
-        border-radius: 2rem;
     }
 }
