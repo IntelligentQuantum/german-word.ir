@@ -4,11 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import classnames from 'classnames';
 
-import { BsSearch } from "react-icons/bs";
+import Main from '../components/layouts/main/main.component';
 
+import { BsBookFill } from 'react-icons/bs';
 import styles from '../styles/Home.module.scss';
-
-import Main from "../components/layouts/main/main.component";
 
 const Home: NextPage = () =>
 {
@@ -16,87 +15,116 @@ const Home: NextPage = () =>
         <>
             <Head>
                 <title>German Word</title>
-                <meta name="description" content="Home Page German Word"/>
+                <meta name='description' content='Home Page German Word'/>
             </Head>
 
-            <header className={classnames("container", styles.homeHeader)}>
+            <header className={styles.homeHeader}>
                 <div className={styles.homeHeaderLeft}>
-                    <span className={styles.homeHeaderLeftImage}>
-                        <Image src="/static/school.gif" alt="IntelligentQuantum German Word" height={250} width={250} />
-                    </span>
-
+                    <h1 className={styles.homeHeaderLeftTitle}>
+                        An excellence center for education
+                    </h1>
+                    <p className={styles.homeHeaderLeftParagraph}>
+                        German Word is the online learning platform that offers various courses for your development
+                    </p>
                     <form className={styles.homeHeaderLeftForm}>
-                        <input className={styles.homeHeaderLeftFormSearchInput} type="text" placeholder="Write a word" />
+                        <input className={styles.homeHeaderLeftFormSearchInput} type='text' placeholder='Write a word' />
                         <button className={styles.homeHeaderLeftFormSearchButton}>
-                            <BsSearch className={styles.homeHeaderLeftFormSearchButtonIcon} />
+                            Search the world
                         </button>
                     </form>
                 </div>
-
                 <div className={styles.homeHeaderRight}>
-                    <span className={styles.homeHeaderRightImage}>
-                        <Image src="/static/playground.gif" alt="IntelligentQuantum German Word" height={250} width={250} />
+                    <div className={styles.homeHeaderRightFirstBox}>
+                        <i className={classnames(styles.homeHeaderRightFirstBoxIcon, 'green-background')}>
+                            <BsBookFill />
+                        </i>
+                        <div className={styles.homeHeaderRightFirstBoxText}>
+                            <h3 className={styles.homeHeaderRightFirstBoxTextTitle}>
+                                110K
+                            </h3>
+                            <p className={styles.homeHeaderRightFirstBoxTextParagraph}>
+                                Germany words
+                            </p>
+                        </div>
+                    </div>
+                    <span>
+                        <Image src='/static/woman.png' alt='German Word' height={700} width={500} />
                     </span>
-
-                    <p className={styles.homeHeaderRightP1}>
-                        <span className={styles.homeHeaderRightP1SpanTop}>Dictionary of your</span>
-                        <span className={styles.homeHeaderRightP1SpanBottom}>language in German</span>
-                    </p>
-                    <p className={styles.homeHeaderRightP2}>
-                        Search for anything like words, sentences, idioms, etc. <br/> in German, even in your native language
-                    </p>
                 </div>
             </header>
-
             <Main>
-                <h1 className="heading-primary">Which level do you want to learn?</h1>
-                <span style={{ display: "flex", justifyContent: "center" }}>
-                    <Image src="/static/book.gif" alt="IntelligentQuantum German Word" width={350} height={350} />
-                </span>
-                <section className={styles.sectionHomeLevel}>
-                    <div className={styles.sectionHomeLevelBoxA}>
-                        <span>
-                            <Image src="/static/a.png" alt="IntelligentQuantum German Word" width={130} height={130} />
-                        </span>
-
-                        <p>
-                            You can find commonly used sentences and phrases related to everyday situations (eg personal and family information, shopping, local geography, environment). It can be used in normal tasks that require simple exchange and information in the familiar and ordinary. You can explain your history, environment and issues of urgent need.
+                <ul className={styles.homeHeaderList}>
+                    <li className={styles.homeHeaderItem}>
+                        <i className={classnames(styles.homeHeaderItemIcon, 'green-background')}>
+                            <BsBookFill />
+                        </i>
+                        <p className={styles.homeHeaderItemParagraph}>
+                            1,000+ Free best online courses
                         </p>
-
-                        <Link href="/">
-                            <a>I want to learn</a>
-                        </Link>
-                    </div>
-                    <div className={styles.sectionHomeLevelBoxB}>
-                        <span>
-                            <Image src="/static/b.png" alt="IntelligentQuantum German Word" width={130} height={130} />
-                        </span>
-
-                        <p>
-                            You can find commonly used sentences and phrases related to everyday situations (eg personal and family information, shopping, local geography, environment). It can be used in normal tasks that require simple exchange and information in the familiar and ordinary. You can explain your history, environment and issues of urgent need.
+                    </li>
+                    <li className={styles.homeHeaderItem}>
+                        <i className={classnames(styles.homeHeaderItemIcon, 'pink-background')}>
+                            <BsBookFill />
+                        </i>
+                        <p className={styles.homeHeaderItemParagraph}>
+                            1,000+ Free best online courses
                         </p>
-
-                        <Link href="/">
-                            <a>I want to learn</a>
-                        </Link>
-                    </div>
-                    <div className={styles.sectionHomeLevelBoxC}>
-                        <span>
-                            <Image src="/static/c.png" alt="IntelligentQuantum German Word" width={130} height={130} />
-                        </span>
-
-                        <p>
-                            You can find commonly used sentences and phrases related to everyday situations (eg personal and family information, shopping, local geography, environment). It can be used in normal tasks that require simple exchange and information in the familiar and ordinary. You can explain your history, environment and issues of urgent need.
+                    </li>
+                    <li className={styles.homeHeaderItem}>
+                        <i className={classnames(styles.homeHeaderItemIcon, 'blue_dark-background')}>
+                            <BsBookFill />
+                        </i>
+                        <p className={styles.homeHeaderItemParagraph}>
+                            1,000+ Free best online courses
                         </p>
-
-                        <Link href="/">
-                            <a>I want to learn</a>
-                        </Link>
+                    </li>
+                </ul>
+                <section className={styles.homeMain}>
+                    <div className={styles.homeMainBoxHeader}>
+                        <h2 className={styles.homeMainBoxHeaderTitle}>
+                            Why choose German Word?
+                        </h2>
+                        <p className={styles.homeMainBoxHeaderParagraph}>
+                            we offer a wide range of opportunity for you. See what you will get and your benefits
+                        </p>
                     </div>
+                    <ul className={styles.homeMainBoxList}>
+                        <li className={styles.homeMainBoxItem}>
+                            <i className={classnames(styles.homeMainBoxItemIcon, 'yellow-background')}>
+                                <BsBookFill />
+                            </i>
+                            <h2 className={styles.homeMainBoxItemTitle}>
+                                Get certificate
+                            </h2>
+                            <p className={styles.homeMainBoxItemParagraph}>
+                                We are providing a certificate to you after completing your course and this will help you future.
+                            </p>
+                        </li>
+                        <li className={styles.homeMainBoxItem}>
+                            <i className={classnames(styles.homeMainBoxItemIcon, 'green-background')}>
+                                <BsBookFill />
+                            </i>
+                            <h2 className={styles.homeMainBoxItemTitle}>
+                                Get certificate
+                            </h2>
+                            <p className={styles.homeMainBoxItemParagraph}>
+                                We are providing a certificate to you after completing your course and this will help you future.
+                            </p>
+                        </li>
+                        <li className={styles.homeMainBoxItem}>
+                            <i className={classnames(styles.homeMainBoxItemIcon, 'pink-background')}>
+                                <BsBookFill />
+                            </i>
+                            <h2 className={styles.homeMainBoxItemTitle}>
+                                Get certificate
+                            </h2>
+                            <p className={styles.homeMainBoxItemParagraph}>
+                                We are providing a certificate to you after completing your course and this will help you future.
+                            </p>
+                        </li>
+                    </ul>
                 </section>
             </Main>
-
-
         </>
     )
 }

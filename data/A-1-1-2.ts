@@ -516,7 +516,7 @@ export const A_1_1_2: WordType[] =
         id: 207,
         word: 'das Echo, -s',
         word_ir: 'انعکاس',
-        sentence: 'SpielenSie „Echo".'
+        sentence: 'SpielenSie „Echo'.'
     },
     {
         id: 208,
@@ -528,7 +528,7 @@ export const A_1_1_2: WordType[] =
         id: 209,
         word: 'spielen',
         word_ir: 'بازی کردن',
-        sentence: 'Spielen Sie „Echo".'
+        sentence: 'Spielen Sie „Echo'.'
     },
     {
         id: 210,
