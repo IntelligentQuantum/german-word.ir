@@ -1,4 +1,4 @@
-import { WordType } from "./word.type";
+import { WordType } from './word.type';
 
 export const A_1_1_1: WordType[] =
 [

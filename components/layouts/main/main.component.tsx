@@ -1,7 +1,5 @@
 import React from 'react';
 
-import styles from './main.module.scss';
-
 interface MainProps
 {
     children: React.ReactNode;
@@ -10,7 +8,7 @@ interface MainProps
 const Main = ({ children }: MainProps) =>
 {
     return (
-        <main className="container">
+        <main>
             { children }
         </main>
     );

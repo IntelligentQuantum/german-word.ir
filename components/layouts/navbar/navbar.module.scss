@@ -4,6 +4,9 @@
     justify-content: space-between;
     height: 8rem;
     line-height: 8rem;
+    max-width: 150rem;
+    margin: auto;
+    padding: 0 4rem !important;
 
     &Logo
     {
@@ -26,11 +29,12 @@
         {
             font-size: 1.5rem;
             font-weight: 600;
+            transition: all .2s;
 
             &:hover,
             &:active
             {
-                border-bottom: 1px solid var(--color-red);
+                color: var(--color-yellow);
             }
         }
     }
@@ -49,6 +53,13 @@
         {
             font-size: 1.7rem;
             font-weight: 600;
+            transition: all .2s;
+
+            &:hover,
+            &:active
+            {
+                color: var(--color-yellow);
+            }
         }
     }
 }
