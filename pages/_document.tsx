@@ -12,9 +12,6 @@ class IQDocument extends Document
         return (
             <Html>
                 <Head>
-                    <meta charSet='UTF-8' />
-                    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
-                    <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
                     <link rel="icon" href="/favicon.ico" />
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
